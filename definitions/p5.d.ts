@@ -2370,6 +2370,7 @@ declare namespace p5 {
      * font (currently only supports single lines)
      */
     textBounds(line: string, x: number, y: number, fontSize: number, options: any): any
+    textToPoints(line: string, x: number, y: number, fontSize?: number, options?: any): any
   }
 
   // lib/addons/p5.dom.js

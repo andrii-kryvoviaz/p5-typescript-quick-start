@@ -1344,7 +1344,7 @@ declare function textWidth(theText: string): number;
 /**
  * Draws text to the screen.
  */
-declare function text(str: string, x: number, y: number, x2: number, y2: number): any;
+declare function text(str: string, x: number, y: number, x2?: number, y2?: number): any;
 
 /**
  * Sets the current font that will be drawn with the text() function.
