@@ -1,0 +1,19 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.fpsmeter {
+  position: absolute;
+  top: 5px;
+  left: 5px;
+  max-width: 106px;
+
+  font-size: 15px;
+  font-family: 'Verdana', sans-serif;
+  padding: 10px 20px;
+
+  color: #fff;
+  background: rgb(34,34,34);
+  opacity: 0.7;
+}
