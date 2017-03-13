@@ -1,6 +1,6 @@
 {
   "name": "p5-typescript-quick-start",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "",
   "main": "index.js",
   "scripts": {
@@ -13,7 +13,11 @@
     "typings": "typings"
   },
   "author": "Andy Krivovjas",
-  "license": "MIT License",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com:AndyKrivovjas/p5-typescript-quick-start.git"
+  },
   "dependencies": {
     "p5": "^0.5.5"
   }
