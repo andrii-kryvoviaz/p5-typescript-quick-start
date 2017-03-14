@@ -2350,6 +2350,9 @@ declare namespace p5 {
     static angleBetween(v1: p5.Vector, v2: p5.Vector): number
 
     static sub(v1: p5.Vector, v2: p5.Vector): p5.Vector
+    static add(v1: p5.Vector, v2: p5.Vector): p5.Vector
+    static mult(v1: p5.Vector, v2: p5.Vector): p5.Vector
+    static div(v1: p5.Vector, v2: p5.Vector): p5.Vector
   }
 
   // src/typography/p5.Font.js

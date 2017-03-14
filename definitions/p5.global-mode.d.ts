@@ -126,7 +126,8 @@ declare function brightness(color: any): void;
  * Creates colors for storing in variables of the color datatype.
  */
 declare function color(v1: number|string, v2?: number, v3?: number, alpha?: number): any[];
-
+declare var HSB: number;
+declare var RGB: number;
 /**
  * Extracts the green value from a color or pixel array.
  */
@@ -181,7 +182,7 @@ declare function clear(): void;
 //   param "max3" has invalid type: Number|Constant
 //   param "maxA" has invalid type: Number|Constant
 //
-// declare function colorMode(mode: number|Constant, max1?: number|Constant, max2?: number|Constant, max3?: number|Constant, maxA?: number|Constant): void;
+declare function colorMode(mode: number|any, max1?: number|any, max2?: number|any, max3?: number|any, maxA?: number|any): void;
 
 /**
  * Sets the color used to fill shapes.
@@ -1344,7 +1345,7 @@ declare function textWidth(theText: string): number;
 /**
  * Draws text to the screen.
  */
-declare function text(str: string, x: number, y: number, x2?: number, y2?: number): any;
+declare function text(str: string|number, x: number, y: number, x2?: number, y2?: number): any;
 
 /**
  * Sets the current font that will be drawn with the text() function.
