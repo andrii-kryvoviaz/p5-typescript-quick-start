@@ -1,9 +1,11 @@
-class FPSmeter {
+
+export class FPSmeter {
   container: p5.Element;
 
   constructor() {
-    if(select('.fpsmeter') == null) {
-      this.container = createDiv('0 FPS');
+
+    if(this.select('.fpsmeter') == null) {
+      this.container = this.createDiv('0 FPS');
       this.container.addClass('fpsmeter');
     }
   }
@@ -14,7 +16,7 @@ class FPSmeter {
 
   tick(frames?: number) {
     if(frames == null) {
-      frames = frameRate();
+      frames = this.frameRate();
     }
     if(frameCount % 16 == 0) {
       this.show(frames);

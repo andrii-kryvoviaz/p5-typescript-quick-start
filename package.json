@@ -6,7 +6,7 @@
   "scripts": {
     "start": "tsc && concurrently \"npm run tsc:w\" \"npm run lite\" ",
     "lite": "lite-server",
-    "preinstall": "npm i typings -g",
+    "preinstall": "npm i webpack -g",
     "postinstall": "typings install",
     "tsc": "tsc",
     "tsc:w": "tsc -w",
@@ -19,6 +19,11 @@
     "url": "git://github.com:AndyKrivovjas/p5-typescript-quick-start.git"
   },
   "dependencies": {
-    "p5": "^0.5.5"
+    "p5": "^0.5.5",
+    "ts-loader": "^2.0.1",
+    "typescript": "^2.2.1"
+  },
+  "devDependencies": {
+    "webpack": "^2.2.1"
   }
 }

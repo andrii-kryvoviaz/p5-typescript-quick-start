@@ -9,13 +9,13 @@
     "removeComments": false,
     "noImplicitAny": false,
     "allowJs": true,
-    "allowUnusedLabels": true
+    "allowUnusedLabels": true,
+    "compileOnSave": false,
   },
-  "filesGlob": [
+  "compileOnSave": false,
+  "include": [
     "definitions/p5.global-mode.d.ts",
     "system/**/*.ts",
     "app/**/*.ts"
-  ],
-  "files": [
   ]
 }

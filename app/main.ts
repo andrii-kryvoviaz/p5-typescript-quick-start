@@ -1,11 +1,22 @@
-var meter;
+import { FPSmeter } from '../system/fpsmeter'
+import { Base } from '../system/base'
 
-function setup() {
-  createCanvas(windowWidth, windowHeight);
-  meter = new FPSmeter();
-}
 
-function draw() {
-  background(51);
-  meter.tick();
+class Main extends Base {
+
+  meter: FPSmeter;
+
+  constructor() {
+    super();
+  }
+
+  setup = function() {
+    this.createCanvas(this.windowWidth, this.windowHeight);
+    // this.meter = new FPSmeter();
+  }
+  draw = function() {
+    this.background(51);
+    // this.meter.tick();
+  }
 }
+new Main();

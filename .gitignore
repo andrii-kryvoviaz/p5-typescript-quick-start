@@ -1,5 +1,6 @@
 node_modules/
-**/*.js
+app/**/*.js
+system/**/*.js
 *.map
 
 .DS_Store
