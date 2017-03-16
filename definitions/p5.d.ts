@@ -2543,7 +2543,7 @@ declare namespace p5 {
     //   param "path" has invalid type: String/Array
     //   return has invalid type: SoundFile
     //
-    // loadSound(path: String/Array, successCallback?: () => any, errorCallback?: () => any, whileLoading?: () => any): SoundFile
+    loadSound(path: string|string[], successCallback?: () => any, errorCallback?: () => any, whileLoading?: () => any): SoundFile
 
     /**
      * Returns true if the sound file finished loading successfully.

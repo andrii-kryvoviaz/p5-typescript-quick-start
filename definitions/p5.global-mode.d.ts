@@ -214,7 +214,7 @@ declare function arc(a: number, b: number, c: number, d: number, start: number, 
 /**
  * Draws an ellipse (oval) to the screen.
  */
-declare function ellipse(a: number, b: number, c: number, d: number): p5;
+declare function ellipse(a: number, b: number, c: number, d?: number): p5;
 
 /**
  * Draws a line (a direct path between two points) to the screen.
@@ -593,7 +593,7 @@ declare function beginContour(): any;
 //
 //   param "kind" has invalid type: Number/Constant
 //
-// declare function beginShape(kind: Number/Constant): any;
+declare function beginShape(kind?: any): any;
 
 /**
  * Specifies vertex coordinates for Bezier curves.
@@ -615,7 +615,7 @@ declare function endContour(): any;
 //
 //   param "mode" has invalid type: Number/Constant
 //
-// declare function endShape(mode: Number/Constant): any;
+declare function endShape(mode?: any): any;
 
 /**
  * Specifies vertex coordinates for quadratic Bezier curves.
@@ -1225,7 +1225,7 @@ declare function createVector(x?: number, y?: number, z?: number): p5.Vector;
 /**
  * Returns the Perlin noise value at specified coordinates.
  */
-declare function noise(x: number, y: number, z: number): number;
+declare function noise(x: number, y?: number, z?: number): number;
 
 /**
  * Adjusts the character and level of detail produced by the Perlin noise
@@ -1248,7 +1248,7 @@ declare function randomSeed(seed: number): void;
 /**
  * Return a random number.
  */
-declare function random(min: number, max: number): number;
+declare function random(min: number, max?: number): number;
 
 /**
  * Returns a random number fitting a Gaussian, or
@@ -1679,6 +1679,8 @@ declare function createElement(tag: string, content?: string): p5.Element;
  * <p>Returns the Audio Context for this sketch.
  */
 declare function getAudioContext(): any;
+
+declare function loadSound(path: string|string[], successCallback?: () => any, errorCallback?: () => any, whileLoading?: () => any): p5.SoundFile
 
 /**
  * Returns a number representing the master amplitude (volume) for sound
