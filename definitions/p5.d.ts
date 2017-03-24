@@ -1300,7 +1300,7 @@ declare class p5 {
   //   param "horizAlign" has invalid type: Number/Constant
   //   param "vertAlign" has invalid type: Number/Constant
   //
-  // textAlign(horizAlign: Number/Constant, vertAlign: Number/Constant): number
+  textAlign(horizAlign: number, vertAlign?: number): number
 
   /**
    * Sets/gets the spacing, in pixels, between lines of text.
@@ -2353,6 +2353,7 @@ declare namespace p5 {
     static add(v1: p5.Vector, v2: p5.Vector): p5.Vector
     static mult(v1: p5.Vector, v2: p5.Vector): p5.Vector
     static div(v1: p5.Vector, v2: p5.Vector): p5.Vector
+    static dist(v1: p5.Vector, v2: p5.Vector): number
   }
 
   // src/typography/p5.Font.js

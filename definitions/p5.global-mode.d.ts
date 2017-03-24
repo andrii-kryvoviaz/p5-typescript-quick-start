@@ -1317,7 +1317,7 @@ declare function radians(degrees: number): number;
 //   param "horizAlign" has invalid type: Number/Constant
 //   param "vertAlign" has invalid type: Number/Constant
 //
-// declare function textAlign(horizAlign: Number/Constant, vertAlign: Number/Constant): number;
+declare function textAlign(horizAlign: number, vertAlign?: number): number;
 
 /**
  * Sets/gets the spacing, in pixels, between lines of text.
